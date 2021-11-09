@@ -7,6 +7,6 @@ public class button : MonoBehaviour
 {
    public void butonBas()
     {
-        SceneManager.LoadScene("Oyun");
+        SceneManager.LoadScene("bolum1");
     }
 }

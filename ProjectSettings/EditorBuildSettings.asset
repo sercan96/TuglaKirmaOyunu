@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/bolum1.unity
-    guid: 13df66a9373378f47a971219eac88b20
-  - enabled: 1
     path: Assets/Scenes/Anasahne.unity
     guid: 844f52c269229b547bdc241626e07bc2
   - enabled: 1
-    path: Assets/Scenes/OyunuKaybettiniz.unity
-    guid: f4348f8b2cbc02b4fbe097253ecde1c5
+    path: Assets/Scenes/bolum1.unity
+    guid: 13df66a9373378f47a971219eac88b20
+  - enabled: 1
+    path: Assets/Scenes/bolum2.unity
+    guid: 2b02d6d28c6d46d4d81a42b0739c94bf
+  - enabled: 1
+    path: Assets/Scenes/bolum3.unity
+    guid: a83daad6f57b94e45a985aa3da6b2eff
   - enabled: 1
     path: "Assets/Scenes/OyunuKazand\u0131n\u0131z.unity"
     guid: f5041e5bb7104464ab8eaa52b030b426
+  - enabled: 1
+    path: Assets/Scenes/OyunuKaybettiniz.unity
+    guid: f4348f8b2cbc02b4fbe097253ecde1c5
   m_configObjects: {}
