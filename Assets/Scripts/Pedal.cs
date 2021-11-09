@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Pedal : MonoBehaviour
 {
-    
-    void Start()
-    {
-        
-    }
 
     
     void Update()
