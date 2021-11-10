@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class OyunBitti : MonoBehaviour
 {
     public Text puanText;
-    public void Start()
+    void Start()
     {
-        //puanText.text = "Puanýnýz : " + GameObject.Find("muzik&puan").GetComponent<puan>().puanAl();
+        puanText.text = "Puanýnýz : " + GameObject.Find("muzik&puan").GetComponent<puan>().puanAl();
     }
     public void AnaSahneyeGec()
     {

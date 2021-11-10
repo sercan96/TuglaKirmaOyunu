@@ -2,23 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class puan : MonoBehaviour
 {
     private int Puan;
-    private Text puanArttirText;
-
+  
     private void Start()
     {
-        puanArttirText = GetComponent<Text>();
+    
     }
     public void puanArttir()
     {
         Puan++;
-        puanArttirText.text = "Puan : " + Puan;
+       
     }
     public int puanAl()   //Toplam puaný hesaplar
     {
         return Puan;
     }
-
+    public void AnaSahneyeGec()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void PuanSifirla()
+    {
+        Puan = 0;
+    }
 }

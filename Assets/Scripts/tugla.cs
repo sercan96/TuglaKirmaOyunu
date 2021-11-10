@@ -15,17 +15,17 @@ public class tugla : MonoBehaviour
     {
         maxCarpmaSayisi = tuglaSprite.Length +1; // diziyi 0 belirlemiþsek 0+1 =1 maxCarpmaSayisi, yani 1 çarpmaya yok olacak.
         toplamTuglaSayisi++; // Oyunda kaç adet tuðla varsa ekle. Örneðin 3 tuðla oluþturduysak +3 ekler.
-        //puanScripti = GameObject.Find("muzik&puan").GetComponent<puan>();
+        puanScripti = GameObject.Find("muzik&puan").GetComponent<puan>();
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("top"))
         {
+            puanScripti.puanArttir();
             carpmaSayisi++;
             
             if (carpmaSayisi >= maxCarpmaSayisi)
-            {
-                //puanScripti.puanArttir();
+            { 
                 toplamTuglaSayisi--;
                 Debug.Log(toplamTuglaSayisi);
                 Destroy(gameObject);

@@ -7,6 +7,8 @@ public class button : MonoBehaviour
 {
    public void butonBas()
     {
+        tugla.toplamTuglaSayisi = 0;
+        GameObject.Find("muzik&puan").GetComponent<puan>().PuanSifirla();
         SceneManager.LoadScene("bolum1");
     }
 }

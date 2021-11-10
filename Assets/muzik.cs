@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class muzik : MonoBehaviour
 {
-    // Start is called before the first frame update
+    static bool SahnedeMuzikVar;
     void Start()
     {
-        GameObject.DontDestroyOnLoad(gameObject);
+        if (!SahnedeMuzikVar)
+        {
+            GameObject.DontDestroyOnLoad(gameObject);
+            SahnedeMuzikVar = true;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+          
     }
 
     // Update is called once per frame
