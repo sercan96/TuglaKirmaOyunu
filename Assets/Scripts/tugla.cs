@@ -31,7 +31,7 @@ public class tugla : MonoBehaviour
                 Destroy(gameObject);
                 if(toplamTuglaSayisi == 0)
                 {
-                    SceneManager.LoadScene(2);
+                    GameObject.Find("_Scripts").GetComponent<OyunKontrol>().BirSonrakiSahne();
                 }
             }
             else

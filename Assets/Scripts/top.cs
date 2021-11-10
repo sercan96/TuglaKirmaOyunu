@@ -21,10 +21,11 @@ public class top : MonoBehaviour
             transform.position = new Vector3(pedal.transform.position.x, transform.position.y, transform.position.z); //pedalýn sadece x pozisyonunu al
         }
         
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !oyunBasladi)
         {
             oyunBasladi = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);    
+            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);
+            
         }
     }
   

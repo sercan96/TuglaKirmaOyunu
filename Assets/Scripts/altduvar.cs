@@ -10,6 +10,7 @@ public class altduvar : MonoBehaviour
         if (collision.gameObject.CompareTag("top"))
         {
              SceneManager.LoadScene("OyunuKaybettiniz");
+            
         } 
     }
 }

@@ -387,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.2333, y: 53.05901}
+  m_AnchoredPosition: {x: -18, y: 53.06}
   m_SizeDelta: {x: 465.3937, y: 106.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441452952
@@ -423,7 +423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Puan\u0131n\u0131z :"
+  m_Text: "Puan\u0131n\u0131z : "
 --- !u!222 &441452953
 CanvasRenderer:
   m_ObjectHideFlags: 0
