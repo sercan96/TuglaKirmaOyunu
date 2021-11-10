@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 1501261097046476079}
   - component: {fileID: 1501261097046476076}
   - component: {fileID: 1501261097046476078}
-  - component: {fileID: 3386692934384602550}
+  - component: {fileID: 1501261098213648979}
+  - component: {fileID: 452231397803227261}
+  - component: {fileID: 3422359945161954516}
   m_Layer: 0
   m_Name: pedal
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1501261097046476074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.3187, y: -2.5843, z: -0.39016634}
-  m_LocalScale: {x: 15.064235, y: 0.6776288, z: 1}
+  m_LocalScale: {x: 15.144075, y: 0.6776288, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc4b6f3e3f0dfc4c9906f1e50f24fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &3386692934384602550
+--- !u!60 &1501261098213648979
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,10 +123,119 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.032502018, y: 0.055693112}
-      - {x: -0.06653721, y: 0.014040794}
-      - {x: -0.066809185, y: -0.046745606}
-      - {x: 0.06872576, y: -0.048616704}
-      - {x: 0.06870635, y: 0.0086627565}
-      - {x: 0.042557165, y: 0.04561134}
-      - {x: 0.021603022, y: 0.062267844}
+    - - {x: -0.036912538, y: 0.060055044}
+      - {x: -0.06714879, y: 0.036121372}
+      - {x: -0.0671488, y: -0.052077074}
+      - {x: 0.06708519, y: -0.04535231}
+      - {x: 0.06751582, y: -0.041764356}
+      - {x: 0.06702624, y: 0.035352316}
+      - {x: 0.0490435, y: 0.06541155}
+--- !u!82 &452231397803227261
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501261097046476074}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.27
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &3422359945161954516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501261097046476074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04b3e112244e8f40bbb1310a6dd2512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pedalSesi: {fileID: 8300000, guid: 5c461c35314ffb14393338f1a79bd9c5, type: 3}
