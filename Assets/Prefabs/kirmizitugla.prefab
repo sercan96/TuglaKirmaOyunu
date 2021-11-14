@@ -128,6 +128,7 @@ MonoBehaviour:
   - {fileID: 1230134399022140801, guid: b6dc609288e60294399158bf7aa96d51, type: 3}
   tuglaSes1: {fileID: 8300000, guid: 8836c38bbfe26fc4d84aa15bde79619f, type: 3}
   tuglaSes2: {fileID: 8300000, guid: 0a53ca1a1f80c5948b8077dfb46ac045, type: 3}
+  tuglaEfekti: {fileID: 8371940067965390941, guid: d7b9fd44952252e47a4d8b4c51021111, type: 3}
 --- !u!82 &5356906103346596991
 AudioSource:
   m_ObjectHideFlags: 0

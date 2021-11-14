@@ -11,6 +11,7 @@ public class tugla : MonoBehaviour
    private int carpmaSayisi;
    private puan puanScripti;
    public AudioClip tuglaSes1, tuglaSes2;
+    public GameObject tuglaEfekti;
 
     private void Start()
     {
@@ -36,6 +37,10 @@ public class tugla : MonoBehaviour
                 {
                     GameObject.Find("_Scripts").GetComponent<OyunKontrol>().BirSonrakiSahne();
                 }
+                Vector3 pos = collision.contacts[0].point; 
+                GameObject go = Instantiate(tuglaEfekti, pos, Quaternion.identity); //týgla efektini ekledik.
+                Destroy(go, 1f);
+
                 GetComponent<AudioSource>().PlayOneShot(tuglaSes2);
                 Destroy(gameObject);
             }
