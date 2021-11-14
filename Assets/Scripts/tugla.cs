@@ -10,6 +10,7 @@ public class tugla : MonoBehaviour
    private int maxCarpmaSayisi;
    private int carpmaSayisi;
    private puan puanScripti;
+   public AudioClip tuglaSes1, tuglaSes2;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class tugla : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("top"))
         {
+           
             puanScripti.puanArttir();
             carpmaSayisi++;
             
@@ -28,14 +30,18 @@ public class tugla : MonoBehaviour
             { 
                 toplamTuglaSayisi--;
                 Debug.Log(toplamTuglaSayisi);
-                Destroy(gameObject);
+               
+                
                 if(toplamTuglaSayisi == 0)
                 {
                     GameObject.Find("_Scripts").GetComponent<OyunKontrol>().BirSonrakiSahne();
                 }
+                GetComponent<AudioSource>().PlayOneShot(tuglaSes2);
+                Destroy(gameObject);
             }
             else
             {
+                GetComponent<AudioSource>().PlayOneShot(tuglaSes1);
                 GetComponent<SpriteRenderer>().sprite = tuglaSprite[carpmaSayisi - 1]; // Spritelarý çalýþtýrabilmemizi saðlar.
             }
         }

@@ -1374,6 +1374,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101479282}
     m_Modifications:
+    - target: {fileID: 1256744499983993404, guid: bebfe8fbff0168a45a458f7a2fc5c32f, type: 3}
+      propertyPath: tuglaSes1
+      value: 
+      objectReference: {fileID: 8300000, guid: 8836c38bbfe26fc4d84aa15bde79619f, type: 3}
+    - target: {fileID: 1256744499983993404, guid: bebfe8fbff0168a45a458f7a2fc5c32f, type: 3}
+      propertyPath: tuglaSes2
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a53ca1a1f80c5948b8077dfb46ac045, type: 3}
     - target: {fileID: 2188590958303983124, guid: bebfe8fbff0168a45a458f7a2fc5c32f, type: 3}
       propertyPath: m_Name
       value: yesiltugla (1)
