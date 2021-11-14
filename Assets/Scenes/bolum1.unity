@@ -1714,6 +1714,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1065256315128681017, guid: 8e1c3caeae7b44941af6f72986dfbb5a, type: 3}
+      propertyPath: particleEfekt
+      value: 
+      objectReference: {fileID: 2926207259507840917, guid: 081d638de54dd054cbc84fa8a6d10837, type: 3}
+    - target: {fileID: 1065256315128681019, guid: 8e1c3caeae7b44941af6f72986dfbb5a, type: 3}
+      propertyPath: particleEfekt
+      value: 
+      objectReference: {fileID: 2926207259507840917, guid: 081d638de54dd054cbc84fa8a6d10837, type: 3}
+    - target: {fileID: 1065256315128681021, guid: 8e1c3caeae7b44941af6f72986dfbb5a, type: 3}
+      propertyPath: particleEfekt
+      value: 
+      objectReference: {fileID: 2926207259507840917, guid: 081d638de54dd054cbc84fa8a6d10837, type: 3}
     - target: {fileID: 1065256315451672384, guid: 8e1c3caeae7b44941af6f72986dfbb5a, type: 3}
       propertyPath: m_RootOrder
       value: 7
