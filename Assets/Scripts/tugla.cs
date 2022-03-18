@@ -6,25 +6,27 @@ using UnityEngine.SceneManagement;
 public class tugla : MonoBehaviour
 {
    public static int toplamTuglaSayisi;  // oluþan tuðla sayisini bulabilmek için.
-   public Sprite[] tuglaSprite;
-   private int maxCarpmaSayisi;
-   private int carpmaSayisi;
+   //public Sprite[] tuglaSprite;
+   public Sprite spriteTugla;
+
+   public int maxCarpmaSayisi;
+   public int carpmaSayisi;
    private puan puanScripti;
    public AudioClip tuglaSes1, tuglaSes2;
-    public GameObject tuglaEfekti;
+   public GameObject tuglaEfekti;
 
     private void Start()
     {
-        maxCarpmaSayisi = tuglaSprite.Length +1; // diziyi 0 belirlemiþsek 0+1 =1 maxCarpmaSayisi, yani 1 çarpmaya yok olacak.
+        //maxCarpmaSayisi = tuglaSprite.Length +1; // diziyi 0 belirlemiþsek 0+1 =1 maxCarpmaSayisi, yani 1 çarpmaya yok olacak.
         toplamTuglaSayisi++; // Oyunda kaç adet tuðla varsa ekle. Örneðin 3 tuðla oluþturduysak +3 ekler.
-        puanScripti = GameObject.Find("muzik&puan").GetComponent<puan>();
+        //puanScripti = GameObject.Find("muzik&puan").GetComponent<puan>();
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("top"))
         {
            
-            puanScripti.puanArttir();
+            //puanScripti.puanArttir();
             carpmaSayisi++;
             
             if (carpmaSayisi >= maxCarpmaSayisi)
@@ -47,7 +49,8 @@ public class tugla : MonoBehaviour
             else
             {
                 GetComponent<AudioSource>().PlayOneShot(tuglaSes1);
-                GetComponent<SpriteRenderer>().sprite = tuglaSprite[carpmaSayisi - 1]; // Spritelarý çalýþtýrabilmemizi saðlar.
+                //GetComponent<SpriteRenderer>().sprite = tuglaSprite[carpmaSayisi - 1]; // Spritelarý çalýþtýrabilmemizi saðlar.
+                GetComponent<SpriteRenderer>().sprite = spriteTugla;
             }
         }
     }
